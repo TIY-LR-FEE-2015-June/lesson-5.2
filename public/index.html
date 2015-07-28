@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app.css">
+    <title>Podcast</title>
+</head>
+<body>
+<div class="target"></div>
+
+<template id="podcast-template">
+    {{#each this as |pod|}}
+    <div>
+        <img src="{{ pod.itunesImage }}" alt="{{pod.summary}}">
+        <h2>{{pod.title}}</h2>
+        <h3>{{pod.description}}</h3>
+    </div>
+    {{/each}}
+</template>
+<script src="jquery/dist/jquery.min.js"></script>
+<script src="handlebars/handlebars.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
