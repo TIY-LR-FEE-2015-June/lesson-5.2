@@ -43,6 +43,7 @@ Character.prototype.attackedByWithWeapon = function(hostile, weapon) {
 };
 
 char = new Character({hitPoints: 200, weapons: {hammer: 20, sword: 15}});
+enemy = new Character();
 
 char.attackedByWithWeapon(enemy, 'hammer');
 
